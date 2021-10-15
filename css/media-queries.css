@@ -249,11 +249,15 @@
 
     .vignette {
         width: 100%;
-        padding-bottom: 10px;
+        padding: 10px;
+        border-radius: 35px;
+        
     }
 
     .hebimg {
         height: 235px;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
     }
 
     .plus {
@@ -274,11 +278,15 @@
 
     .vignettepop {
         padding: 10px;
+        height: 294px;
+        border-radius: 35px;
     }
 
     .popimg {
         width: 260px;
         height: 276px;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
     }
 
     .poptxt {
@@ -310,20 +318,29 @@
         flex-wrap: nowrap;
         align-content: flex-start;
         row-gap: 50px;
+        height: unset;
     }
 
     .vignetteact {
         width: 100%;
     }
 
-    .vignetteact--double {
-        height: unset;
-        display: contents;
-    }
-
     .actimg {
         width: 100%;
         height: 275px;
+    }
+
+    .figure-act--h124 {
+        height: 267px;
+    }
+    .figure-act--h75 {
+        height: 267px;
+    }
+    .figure-act--h96 {
+        height: 267px;
+    }
+    .figure-act--h105 {
+        height: 267px;
     }
 
     /* FOOTER */
