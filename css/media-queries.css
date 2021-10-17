@@ -1,5 +1,6 @@
 /* Media-query pour les tablettes */
 @media all and (min-width: 768px) and (max-width: 991px) {
+    /* Eléments commun à toute la page */
     .conteneur {
         width: 768px;
     }
@@ -58,14 +59,13 @@
         justify-content: space-between;
     }
 
+    .a-vignettepop {
+        width: 31%;
+    }
     .vignettepop {
         flex-direction: column;
-        width: 31%;
+        padding: 5px;
         height: unset;
-    }
-
-    .vignettepop--milieu {
-        margin: unset;
     }
 
     .popimg {
@@ -96,11 +96,12 @@
 
 /* Media-query pour les téléphones portables */
 @media all and (max-width:767px) {
+    /* Eléments communs à toute la page */
     body {
         font-size: 20px;
     }
     .conteneur {
-        width: 100%;
+        width: 100vw;
         margin-top: 20px;;
     }
 
@@ -119,7 +120,7 @@
     }
     h5 {
         font-size: 34px;
-        margin: 30px 25px;
+        margin: 20px 25px;
     }
 
     /* HEADER */
@@ -163,10 +164,12 @@
         height: 100px;
         margin-top: 60px;
         margin-bottom: 40px;
+        width: 100%;
     }
 
     #logomap {
         width: 100px;
+        min-width: 80px;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
     }
@@ -176,7 +179,8 @@
     }
 
     input {
-        width: 500px;
+        width: auto;
+        min-width: 330px;
         border-top-width: 2px;
         border-bottom-width: 2px;
         font-size: 38px;
@@ -235,7 +239,7 @@
         flex-wrap: wrap-reverse;
     }
 
-    /* HEBERGEMENTS */
+    /* Hébergements */
     .hebergements {
         width: 100%;
         border-radius: 0;
@@ -244,20 +248,25 @@
 
     .vignettes {
         flex-direction: column;
-        row-gap: 15px;
+        row-gap: 35px;
+    }
+
+    .a-vignette {
+        width: 100%;
     }
 
     .vignette {
         width: 100%;
         padding: 10px;
         border-radius: 35px;
+        margin-bottom: unset;
         
     }
 
     .hebimg {
         height: 235px;
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
     }
 
     .plus {
@@ -265,7 +274,7 @@
         margin-top: 40px;
     }
 
-    /* POPULAIRES */
+    /* Les plus populaires */
     .populaires {
         width: 100%;
         border-radius: 0;
@@ -273,7 +282,7 @@
     }
 
     .vignettespop {
-        row-gap: 15px;
+        row-gap: 35px;
     }
 
     .vignettepop {
@@ -285,8 +294,8 @@
     .popimg {
         width: 260px;
         height: 276px;
-        border-top-left-radius: 35px;
-        border-bottom-left-radius: 35px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .poptxt {
@@ -341,6 +350,10 @@
     }
     .figure-act--h105 {
         height: 267px;
+    }
+
+    .legendes {
+        height: 80px;
     }
 
     /* FOOTER */
