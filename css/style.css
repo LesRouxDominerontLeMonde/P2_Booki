@@ -58,9 +58,21 @@ figure {
     margin: 0;
 }
 
+/* Optimisation du code */
+.flex {
+    display: flex;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* HEADER */
 header {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -73,14 +85,11 @@ header {
 }
 
 .liste-nav {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding: 0;
     min-width: 250px;
 }
 .liste-nav__objet {
-    display: flex;
     padding: 0 20px;
     height: 40px;
     align-items: flex-end;
@@ -104,15 +113,12 @@ header {
 }
 
 form {
-    display: flex;
-    flex-direction: row;
     height: 35px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
 #logomap {
-    display: flex;
     background-color: var(--color-grey);
     border: var(--color-grey);
     border-top-left-radius: 10px;
@@ -153,7 +159,6 @@ input {
 }
 
 .filtres {
-    display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
@@ -161,13 +166,10 @@ input {
 }
 
 .filtres__boutons {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 .filtres__boutons__bouton {
-    display: flex;
     align-items: center;
     height: 35px;
     background-color: white;
@@ -185,7 +187,6 @@ input {
 }
 
 .filtres__boutons__bouton__medaille {
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-blue-light);
@@ -201,8 +202,6 @@ input {
 }
 
 .info {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
@@ -212,7 +211,6 @@ input {
     height: 30px;
     border: 2px solid var(--color-grey);
     border-radius: 15px;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
@@ -229,7 +227,6 @@ input {
 }
 
 .hebergements_et_populaires {
-    display: flex;
     flex-direction: row;
     margin: 20px 34px;
     justify-content: space-between;
@@ -237,8 +234,6 @@ input {
 
 /* Hébergements */
 .hebergements {
-    display: flex;
-    flex-direction: column;
     width: 65%;
     border-radius: 20px;
     background-color: var(--color-grey);
@@ -247,7 +242,6 @@ input {
 }
 
 .vignettes {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -259,8 +253,6 @@ input {
 }
 
 .vignette {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     padding: 5px;
     border-radius: 17px;
@@ -282,8 +274,6 @@ input {
 
 .stars {
     margin-left: 10px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 5px;
 }
@@ -304,8 +294,6 @@ input {
 
 /* Les plus populaires */
 .populaires {
-    display: flex;
-    flex-direction: column;
     width: 31%;
     border-radius: 20px;
     background-color: var(--color-grey);
@@ -313,15 +301,12 @@ input {
 }
 
 .titrepop {
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .vignettespop {
-    display: flex;
     flex-direction: column;
     margin-top: 5px;
     height: 100%;
@@ -331,7 +316,6 @@ input {
 .vignettepop {
     background-color: white;
     border-radius: 17px;
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 5px 10px 5px 5px;
@@ -347,22 +331,16 @@ input {
 }
 
 .poptxt {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 /* Section ACTIVITES */
 .activites {
-    display: flex;
-    flex-direction: column;
     margin: 40px 34px 20px 34px;
 }
 
 .vignettesact {
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     height: 308px;
     align-content: space-between;
@@ -394,8 +372,6 @@ input {
 }
 
 .figure-act {
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.300);
@@ -407,7 +383,6 @@ input {
 
 /* FOOTER */
 footer {
-    display: flex;
     flex-direction: row;
     justify-content: start;
     background-color: var(--color-grey);
@@ -416,8 +391,6 @@ footer {
 }
 
 .foot-colonne {
-    display: flex;
-    flex-direction: column;
     width: 33%;
 }
 
