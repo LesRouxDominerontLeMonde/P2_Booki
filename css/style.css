@@ -228,7 +228,7 @@ input {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.6);
 }
 
-.hebergementsetpopulaires {
+.hebergements_et_populaires {
     display: flex;
     flex-direction: row;
     margin: 20px 34px;

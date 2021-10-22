@@ -38,7 +38,7 @@
     }
 
     /* Section HEBERGEMENTS et POPULAIRES */
-    .hebergementsetpopulaires {
+    .hebergements_et_populaires {
         flex-wrap: wrap-reverse;
         row-gap: 40px;
         flex-direction: column;
@@ -234,7 +234,7 @@
     }
 
     /* Section HEBERGEMENTS & POPULAIRES */
-    .hebergementsetpopulaires {
+    .hebergements_et_populaires {
         margin: 20px 0;
         flex-wrap: wrap-reverse;
     }
