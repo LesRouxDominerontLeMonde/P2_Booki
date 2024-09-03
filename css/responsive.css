@@ -97,4 +97,25 @@
         }
     }
 
+        /* --- ACTIVITES --- */
+
+    .activites-container {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        img {
+            height: 180px;
+        }
+    }
+
+    .double {
+        gap: 15px;
+    }
+
+        /* --- FOOTER --- */
+    
+    .footer{
+        flex-direction: column;
+        gap: 0;
+    }
 }
