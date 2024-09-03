@@ -1,0 +1,45 @@
+.filtres-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+    align-items: center;
+    font-weight: 800;
+
+    h3 {
+        margin: 0 15px 0 10px;
+    }
+}
+
+
+
+.filtre-categorie:hover {
+    scale: 105%;
+    transition: all 0.3s ease-out;
+}
+
+.filtre-categorie {
+    position: relative;
+
+    i {
+        position: relative;
+        z-index: 2; /* Pour pas voir la bordure car fond transparent */
+        color: var(--blue);
+        background-color: var(--light-blue);
+        padding: 18px;
+        padding-bottom: 19px; /*Plus jolie les ronds =) */
+        border-radius: 50%;
+        margin-right: -50px;
+    }
+
+    span {
+        padding: 15px 20px;
+        padding-left: 60px;
+        border: solid 2px lightgray;
+        border-radius: 30px;
+    }
+}
+
+.fa-child { /* Le seul plus petit logo, donc repositionement */
+    transform: translateX(-2px); /* ou margin-right -43 */
+}

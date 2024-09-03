@@ -1,0 +1,166 @@
+.info-ctn {
+    padding: 20px 0;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    i {
+        padding: 9px 7px 10px 8px; /* recreation du cercle car sinon logo payant */
+        margin-right: 10px;
+        color: var(--blue);
+        border: 1px solid var(--gray);
+        border-radius: 10px;
+    }
+}
+
+.gauchedroite {
+    display: flex;
+    gap: 40px;
+}
+
+.gauche {
+    flex: 4;
+    background-color: var(--gray);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h3 {
+        padding-left: 20px;
+        padding-top: 20px;
+        font-weight: 800;
+    }
+
+    > span {  /* Span direct sinon ca touche les autres span */
+        padding-left: 30px;
+        padding-bottom: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+.droite {
+    flex: 2;
+    background-color: var(--gray);
+    padding: 10px;
+    border-radius: 20px;
+
+    .en-tete-ctn {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 25px 0 25px;
+
+        h3 {
+            font-weight: 800;
+        }
+
+        i {
+            font-size: 140%;
+        }
+    }
+}
+
+#cards-ctn {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hebergement-card {
+    width: 220px;
+    margin: 15px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    
+    img {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .card-description {
+        padding-left: 20px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    h4, p, .etoiles {
+        margin-bottom: 10px;
+    }
+    
+    p span {
+        font-weight: 800;
+    }
+    
+    .etoiles {
+        color: var(--blue);
+        font-size: 80%;
+    }
+}
+
+.hebergement-card:hover, .populaire-card:hover {
+    box-shadow: 6px 6px 6px rgba(255, 182, 193, 0.7); 
+}
+
+.populaire-card {
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    margin: 35px 25px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 130px;
+        height: 140px;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .card-description {
+        flex: 2;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 5px 0 8px 0;
+    }
+
+    p span {
+        font-weight: 700;
+    }
+
+    .etoiles {
+        margin-top: auto;
+        color: var(--blue);
+        font-size: 80%;
+    }
+}
+
+/* Gestion des etoiles grises NOTATION */
+.quatre {
+    i:nth-child(5) {
+        color: lightgray;
+    }
+}
+
+.trois {
+    i:nth-child(5),
+    i:nth-child(4) {
+        color: lightgray;
+    }
+}

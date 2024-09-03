@@ -1,0 +1,100 @@
+/* TABLETTE */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+} 
+
+
+/* TELEPHONE */
+@media screen and (max-width: 768px){
+
+
+        /* --- GLOBAL --- */
+    
+    main {
+        margin: 0 20px;
+    }
+
+        /* --- HEADER --- */
+    .header-ctn {
+        flex-direction: column;
+    }
+
+    .header-logo {
+        margin-left: 5px;
+        margin-top: 25px;
+        width: 150px;
+        height: 75px;
+    }
+
+    nav {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%; /* Prend 100% du 100% de la nav */
+    }
+
+    .blue-bar {
+        padding: 45px 0 20px 0;
+        border-bottom: 5px solid var(--gray);
+        font-weight: 500;
+    }
+
+    .blue-bar:hover {
+        border-top: none;
+        border-bottom: 5px solid var(--blue);
+        padding: 45px 0 15px 0;
+    }
+
+        /* --- RECHERCHE BAR --- */
+
+    .form .city {
+        padding-right: 10px; /* Optimisation visuel, pour compenser les -10 margin left du button image*/
+    }
+
+    .form .submit {
+        .fa-magnifying-glass {
+            display: contents;
+        }
+        .button-text {
+            display: none;
+        }
+        border-radius: 10px;
+        margin-left: -10px; /* Pour l'effet clean bordure milieu*/
+    }
+
+        /* --- HEBERGEMENT --- */
+
+    .gauchedroite {
+        flex-direction: column-reverse;
+        margin: 0 -20px;
+    }
+
+    .droite {
+        border-radius: 0px;
+        padding: 0;
+
+        .populaire-card {
+            margin: 25px 20px;
+        }
+    }
+
+    .gauche{
+        background-color: white;
+        padding-top: 0;
+
+        h3 {
+            padding-top: 0;
+        }
+
+        .hebergement-card {
+            width: 100%;
+        }
+
+        > span {
+            padding-top: 10px;
+        }
+    }
+
+}

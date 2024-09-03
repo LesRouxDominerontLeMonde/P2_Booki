@@ -1,0 +1,23 @@
+
+
+.footer {
+    width: 100%;
+    background: var(--gray);
+    display: flex;
+    margin-top: 40px;
+    padding-left: 45px;
+    gap: 45px;
+}
+  
+.footer-container {
+    flex: 1;
+
+    h4 {
+        padding: 40px 0 20px 0;
+    }
+
+}
+
+.footer-container ul li {
+    padding-bottom: 10px;
+}
